@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 21 14:26:38 2024
+# Process ID: 9408
+# Current directory: C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.runs/impl_1
+# Command line: vivado.exe -log ALU.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ALU.tcl -notrace
+# Log file: C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.runs/impl_1/ALU.vdi
+# Journal file: C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ALU.tcl -notrace

@@ -1,0 +1,26 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 378ece587b2c4162bf9e7712f00d0ae7 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ALU_behav xil_defaultlib.ALU -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.full_adder1bit [full_adder1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.bitadder [bitadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.full_sub1bit [full_sub1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.full_sub8bit [full_sub8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.halfadder_1bit [halfadder_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.inmultire [inmultire_default]
+Compiling architecture behavioral of entity xil_defaultlib.divider8 [divider8_default]
+Compiling architecture behavioral of entity xil_defaultlib.debouncer [debouncer_default]
+Compiling architecture behavioral of entity xil_defaultlib.SSD [ssd_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu
+Built simulation snapshot ALU_behav

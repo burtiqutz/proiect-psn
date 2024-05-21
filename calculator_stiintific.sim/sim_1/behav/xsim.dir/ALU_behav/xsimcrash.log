@@ -1,0 +1,47 @@
+Unable to capture context for thread 4160 in process 8116, can not generate back trace
+Unable to capture context for thread 6756 in process 8116, can not generate back trace
+Unable to capture context for thread 4272 in process 8116, can not generate back trace
+Unable to capture context for thread 11112 in process 8116, can not generate back trace
+Unable to capture context for thread 2352 in process 8116, can not generate back trace
+Unable to capture context for thread 5208 in process 8116, can not generate back trace
+Exception at PC 0x00007FFDB280BB93
+Printing stacktrace...
+
+Unable to capture context for thread 6756 in process 8116, can not generate back trace
+Unable to capture context for thread 4272 in process 8116, can not generate back trace
+Unable to capture context for thread 3452 in process 8116, can not generate back trace
+Unable to capture context for thread 2352 in process 8116, can not generate back trace
+Unable to capture context for thread 5208 in process 8116, can not generate back trace
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+[0]  [0x00007FFDB280BB93]
+[1]  [0x00007FFDB280BB93]
+[2]  [0x00007FFDB280B4A1]
+[3]  [0x00007FFDB280B459]
+[4]  [0x00007FFDB27F19FE]
+[5]  [0x00007FFDB27F0ED1]
+[6]  [0x00007FFDB27F0D76]
+[7]  [0x00007FFDB27979F6]
+[8]  [0x00007FFDB2787AFB]
+[9]  [0x00007FFDB28AE90A]
+[10]  [0x00007FFDB28C9F87]
+[11]  [0x00007FFDB28CA05F]
+[12] (BaseThreadInitThunk+0x14) [0x00007FFE14047344]
+[13] (RtlUserThreadStart+0x21) [0x00007FFE152426B1]
+Done
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89
+Exception at PC 0x00007FFE12DFAB89

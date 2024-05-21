@@ -1,0 +1,421 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 21 14:25:24 2024
+# Process ID: 12144
+# Current directory: C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.runs/synth_1
+# Command line: vivado.exe -log ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+# Log file: C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.runs/synth_1/ALU.vds
+# Journal file: C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU.tcl -notrace
+Command: synth_design -top ALU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 968 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 278.102 ; gain = 67.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:44]
+INFO: [Synth 8-3491] module 'bitadder' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:34' bound to instance 'adunare' of component 'bitadder' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'bitadder' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:42]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'et2' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'full_adder1bit' (1#1) [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:42]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'et2' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:58]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'et2' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:58]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'et2' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:58]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'et2' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:58]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'et2' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:58]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'et2' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:58]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'et2' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:58]
+WARNING: [Synth 8-3848] Net cout in module/entity bitadder does not have driver. [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'bitadder' (2#1) [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd:42]
+INFO: [Synth 8-3491] module 'full_sub8bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:34' bound to instance 'scadere' of component 'full_sub8bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'full_sub8bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:41]
+INFO: [Synth 8-3491] module 'full_sub1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:34' bound to instance 'e1' of component 'full_sub1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'full_sub1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'full_sub1bit' (3#1) [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:42]
+INFO: [Synth 8-3491] module 'full_sub1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:34' bound to instance 'e2' of component 'full_sub1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:57]
+INFO: [Synth 8-3491] module 'full_sub1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:34' bound to instance 'e3' of component 'full_sub1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:58]
+INFO: [Synth 8-3491] module 'full_sub1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:34' bound to instance 'e4' of component 'full_sub1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:59]
+INFO: [Synth 8-3491] module 'full_sub1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:34' bound to instance 'e5' of component 'full_sub1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:60]
+INFO: [Synth 8-3491] module 'full_sub1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:34' bound to instance 'e6' of component 'full_sub1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:61]
+INFO: [Synth 8-3491] module 'full_sub1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:34' bound to instance 'e7' of component 'full_sub1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:62]
+INFO: [Synth 8-3491] module 'full_sub1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd:34' bound to instance 'e8' of component 'full_sub1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'full_sub8bit' (4#1) [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:41]
+INFO: [Synth 8-3491] module 'inmultire' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:34' bound to instance 'multiply' of component 'inmultire' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'inmultire' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:40]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_01' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:135]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_02' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:136]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_03' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:137]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_04' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:138]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_05' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:139]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_06' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:140]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_07' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:142]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_08' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:143]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_09' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:144]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_10' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:145]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_11' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:146]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_12' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:147]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_13' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:148]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_14' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:150]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_15' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:151]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_16' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:152]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_17' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:153]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_18' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:154]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_19' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:155]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_20' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:156]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_21' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:158]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_22' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:159]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_23' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:160]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_24' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:161]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_25' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:162]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_26' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:163]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_27' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:164]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_28' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:166]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_29' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:167]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_30' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:168]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_31' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:169]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_32' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:170]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_33' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:171]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_34' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:172]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_35' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:174]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_36' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:175]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_37' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:176]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_38' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:177]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_39' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:178]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_40' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:179]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_41' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:180]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_42' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:182]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_43' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:183]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_44' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:184]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_45' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:185]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_46' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:186]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_47' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:187]
+INFO: [Synth 8-3491] module 'full_adder1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd:34' bound to instance 'full_48' of component 'full_adder1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:188]
+INFO: [Synth 8-3491] module 'halfadder_1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:34' bound to instance 'half_1' of component 'halfadder_1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'halfadder_1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'halfadder_1bit' (5#1) [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:41]
+INFO: [Synth 8-3491] module 'halfadder_1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:34' bound to instance 'half_2' of component 'halfadder_1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:191]
+INFO: [Synth 8-3491] module 'halfadder_1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:34' bound to instance 'half_3' of component 'halfadder_1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:193]
+INFO: [Synth 8-3491] module 'halfadder_1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:34' bound to instance 'half_4' of component 'halfadder_1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:194]
+INFO: [Synth 8-3491] module 'halfadder_1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:34' bound to instance 'half_5' of component 'halfadder_1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:195]
+INFO: [Synth 8-3491] module 'halfadder_1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:34' bound to instance 'half_6' of component 'halfadder_1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:196]
+INFO: [Synth 8-3491] module 'halfadder_1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:34' bound to instance 'half_7' of component 'halfadder_1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:197]
+INFO: [Synth 8-3491] module 'halfadder_1bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd:34' bound to instance 'half_8' of component 'halfadder_1bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'inmultire' (6#1) [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd:40]
+INFO: [Synth 8-3491] module 'divider8' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/impartire.vhd:34' bound to instance 'impartire' of component 'divider8' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'divider8' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/impartire.vhd:43]
+INFO: [Synth 8-3491] module 'full_sub8bit' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd:34' bound to instance 'U0' of component 'full_sub8bit' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/impartire.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'divider8' (7#1) [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/impartire.vhd:43]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/debouncer.vhd:16' bound to instance 'impartireBtn' of component 'debouncer' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/debouncer.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (8#1) [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/debouncer.vhd:22]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/debouncer.vhd:16' bound to instance 'inmultireBtn' of component 'debouncer' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:130]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/debouncer.vhd:16' bound to instance 'adunareBtn' of component 'debouncer' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:131]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/debouncer.vhd:16' bound to instance 'scadereBtn' of component 'debouncer' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:132]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/Alex/Downloads/ssd.vhd:5' bound to instance 'afisare' of component 'SSD' [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/Alex/Downloads/ssd.vhd:12]
+INFO: [Synth 8-226] default block is never used [C:/Users/Alex/Downloads/ssd.vhd:31]
+INFO: [Synth 8-226] default block is never used [C:/Users/Alex/Downloads/ssd.vhd:46]
+INFO: [Synth 8-226] default block is never used [C:/Users/Alex/Downloads/ssd.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (9#1) [C:/Users/Alex/Downloads/ssd.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (10#1) [C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd:44]
+WARNING: [Synth 8-3331] design bitadder has unconnected port cout
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 316.465 ; gain = 106.332
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 316.465 ; gain = 106.332
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Alex/Downloads/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/Alex/Downloads/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Alex/Downloads/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ALU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ALU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 627.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.133 ; gain = 417.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.133 ; gain = 417.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.133 ; gain = 417.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.133 ; gain = 417.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 72    
+	   2 Input      1 Bit         XORs := 24    
++---Registers : 
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module full_adder1bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module full_sub1bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+Module halfadder_1bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module divider8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (impartireBtn/Q1_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (impartireBtn/Q2_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (impartireBtn/Q3_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (inmultireBtn/Q1_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (inmultireBtn/Q2_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (inmultireBtn/Q3_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (adunareBtn/Q1_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (adunareBtn/Q2_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (adunareBtn/Q3_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (scadereBtn/Q1_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (scadereBtn/Q2_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (scadereBtn/Q3_reg) is unused and will be removed from module ALU.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 719.215 ; gain = 509.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 793.805 ; gain = 583.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 902.875 ; gain = 692.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 903.742 ; gain = 693.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 903.742 ; gain = 693.609
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 903.742 ; gain = 693.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 903.742 ; gain = 693.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 903.742 ; gain = 693.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 903.742 ; gain = 693.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 903.742 ; gain = 693.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |    16|
+|4     |LUT2   |    45|
+|5     |LUT3   |    22|
+|6     |LUT4   |    34|
+|7     |LUT5   |    21|
+|8     |LUT6   |   115|
+|9     |FDRE   |    42|
+|10    |IBUF   |    21|
+|11    |OBUF   |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+---------+------+
+|      |Instance    |Module   |Cells |
++------+------------+---------+------+
+|1     |top         |         |   336|
+|2     |  afisare   |SSD      |    76|
+|3     |  impartire |divider8 |    67|
++------+------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 903.742 ; gain = 693.609
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 903.742 ; gain = 382.941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 903.742 ; gain = 693.609
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+127 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 903.742 ; gain = 693.609
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.runs/synth_1/ALU.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 903.742 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 21 14:26:31 2024...
