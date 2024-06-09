@@ -17,15 +17,13 @@ set_property target_language VHDL [current_project]
 set_property ip_output_repo c:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub1bit.vhd
   C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/halfadder_1bit.vhd
   C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_adder1bit.vhd
-  C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/full_sub8bit.vhd
-  C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/8bitadder.vhd
+  C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/signed_magnitude_adder.vhd
   C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/inmultire.vhd
   C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/impartire.vhd
   C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/debouncer.vhd
-  C:/Users/Alex/Downloads/ssd.vhd
+  C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/SSD.vhd
   C:/Xilinx/Projects/calculator_stiintific/calculator_stiintific.srcs/sources_1/new/ALU.vhd
 }
 foreach dcp [get_files -quiet -all *.dcp] {

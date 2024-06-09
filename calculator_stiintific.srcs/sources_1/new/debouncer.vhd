@@ -20,22 +20,28 @@ entity debouncer is
 end debouncer;
 
 architecture Behavioral of debouncer is
-
+signal count : std_logic_vector (15 downto 0) := (others => '0');
+signal t : std_logic;
 signal Q1, Q2, Q3 : std_logic;
-
 begin
 
-
+process(clk)
+begin
+    if rising_edge(clk) then
+    if t = '1' then
+        q1 <= d_in;
+    end if;
+    end if;
+end process;
 
 process(Clk)
 begin
-   if (Clk'event and Clk = '1') then
-         Q1 <= D_IN;
+   if rising_edge(clk) then
          Q2 <= Q1;
          Q3 <= Q2;
    end if;
 end process;
 
-Q_OUT <= Q1 and Q2 and (not Q3);
+Q_OUT <= Q2 and (not Q3);
 
 end Behavioral;

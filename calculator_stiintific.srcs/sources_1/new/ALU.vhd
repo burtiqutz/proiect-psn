@@ -34,7 +34,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity ALU is
     Port ( a : in STD_LOGIC_VECTOR (7 downto 0);
            b : in STD_LOGIC_VECTOR (7 downto 0);
-           btn : in STD_LOGIC_VECTOR (3 downto 0);
+           btn : in STD_LOGIC_VECTOR (2 downto 0);
            clk : in STD_LOGIC;
            an : out std_logic_vector (7 downto 0);
            cat : out std_logic_vector(6 downto 0)
@@ -60,21 +60,6 @@ signal remainder_8bit : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
 signal carryOut : STD_LOGIC;
 signal Borrow : STD_LOGIC;
 
-component bitadder is
-  Port ( a : in std_logic_vector (7 downto 0);
-         b : in std_logic_vector (7 downto 0);
-         cin : in std_logic;
-         cout: out std_logic;
-         result : out std_logic_vector (7 downto 0));
-end component bitadder;
-
-component full_sub8bit is
-    Port ( A : in  STD_LOGIC_VECTOR(7 DOWNTO 0);
-           B : in  STD_LOGIC_VECTOR(7 DOWNTO 0);
-           R : out  STD_LOGIC_VECTOR(7 DOWNTO 0);
-           Z : out  STD_LOGIC);
-end component full_sub8bit;
-
 component inmultire is
   Port ( a : in STD_LOGIC_VECTOR (7 downto 0);
          b : in STD_LOGIC_VECTOR (7 downto 0);
@@ -82,12 +67,8 @@ component inmultire is
 end component inmultire;
 
 component divider8 is
-    Port ( 
-           clk : in  STD_LOGIC;
-           A : in  STD_LOGIC_VECTOR(7 DOWNTO 0);
-           B : in  STD_LOGIC_VECTOR(7 DOWNTO 0);
-           Q : out  STD_LOGIC_VECTOR(7 DOWNTO 0);
-           R : out  STD_LOGIC_VECTOR(7 DOWNTO 0));
+  Port (a, b: in std_logic_vector(7 downto 0);
+        q, r: out std_logic_vector(7 downto 0));
 end component divider8;
 
 component debouncer is
@@ -103,42 +84,45 @@ component SSD is
            cat: out STD_LOGIC_VECTOR(6 downto 0));
 end component SSD;
 
-signal operation : std_logic_vector (3 downto 0);
+component signed_magnitude_adder is
+    Port (
+        A : in  STD_LOGIC_VECTOR (7 downto 0); -- First 8-bit signed magnitude input
+        B : in  STD_LOGIC_VECTOR (7 downto 0); -- Second 8-bit signed magnitude input
+        Sum : out  STD_LOGIC_VECTOR (7 downto 0)); -- 8-bit signed magnitude sum
+end component signed_magnitude_adder;
+
+signal operation : std_logic_vector (2 downto 0):= "000";
 signal outputDisplay : std_logic_vector (31 downto 0);
+signal a_mag : std_logic_vector (7 downto 0);
+signal b_mag : std_logic_vector (7 downto 0);
+signal sign : std_logic := '0';
 begin
-adunare: bitadder port map (a => a, b => b, cin => '0', cout => carryOut, result => sumOutput_8bit);
+a_mag <= '0' & a(6 downto 0);
+b_mag <= '0' & b(6 downto 0);
+adunare: signed_magnitude_adder port map (a => a, b => b, sum => sumOutput_8bit);
 
-scadere: full_sub8bit port map (A => a, B => b, R => subOutput_8bit, Z => Borrow);
-
-multiply: inmultire port map (a => a,
-                              b => b,
+multiply: inmultire port map (a => a_mag,
+                              b => b_mag,
                               result => mulOutput
                               );
-impartire: divider8 port map(
-                            clk => clk,
-                            A => a,
-                            B => b,
-                            Q => divOutput_8bit,
-                            R => remainder_8bit
-                            );
-                            
-sumOutput <= "00000000" & sumOutput_8bit;
-subOutput <= "00000000" & subOutput_8bit;
+
+impartire: divider8 port map(a_mag, b_mag, divOutput_8bit, remainder_8bit);
+                           
+sign <= a(7) xor b(7);                          
+sumOutput <= sumOutput_8bit(7) & "00000000" & sumOutput_8bit(6 downto 0);
 divOutput <= "00000000" & divOutput_8bit;
 
-impartireBtn:debouncer port map(clk =>clk,D_in => btn(3),Q_out => operation(3));
-inmultireBtn:debouncer port map(clk =>clk,D_in =>btn(2),Q_out => operation(2));
-adunareBtn:debouncer port map(clk => clk,D_in => btn(1),Q_out => operation(1));
-scadereBtn:debouncer port map(clk => clk,D_in => btn(0),Q_out => operation(0));
+impartireBtn:debouncer port map(clk =>clk,D_in => btn(2),Q_out => operation(2));
+inmultireBtn:debouncer port map(clk =>clk,D_in =>btn(1),Q_out => operation(1));
+adunareBtn:debouncer port map(clk => clk,D_in => btn(0),Q_out => operation(0));--not needed
 
 with btn select
-               output <= sumOutput when "1000",
-                            subOutput when "0100",
-                            mulOutput when "0010",
-                            divOutput when "0001",
+               output <= sumOutput when "100",
+                           sign & mulOutput(14 downto 0) when "010",
+                            sign & divOutput(14 downto 0) when "001",
                             (others => '0') when others;                    
                              
-outputDisplay <= a & b & output;
+outputDisplay <= a & b & output(15 downto 0);
 
 afisare: SSD port map (clk => clk, digits => outputDisplay, an => an, cat => cat);
 end Behavioral;
